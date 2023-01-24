@@ -275,7 +275,7 @@ namespace ZTP.Projekt
         public void initGame(string UserName)
         {
             PlayerName = UserName;
-            //initExcelDoc(ExcelFileFormat.XLSX);
+            initExcelDoc(ExcelFileFormat.XLSX);
 
             /*  TEST ZAPISU
             Score score = new Score();
@@ -660,8 +660,8 @@ namespace ZTP.Projekt
                 Score score = new Score();
                 score.PlayerScore = this.Score;
                 score.Nick = this.PlayerName;
-                //score.SaveToExcel(ws);
-                //ExcelFile.Save();
+                score.SaveToExcel(ws);
+               ExcelFile.Save();
             }
             return endGame;
         }
